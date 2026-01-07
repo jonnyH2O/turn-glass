@@ -5,7 +5,7 @@ A medieval fantasy-themed turn timer for the Nimble TTRPG system.
 
 ## 🎲 Features
 
-- **x-second action timer** with animated hourglass (easily adjustable)
+- **12-second action timer** with animated hourglass (easily adjustable)
 - **4 action types**: Attack, Spell, Move, Assess
 - **3 assessment options**: Ask a Question, Create an Opening, Anticipate Danger
 - **Action tracking**: Visual slots show your selected actions in order

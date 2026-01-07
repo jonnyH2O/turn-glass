@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { Sword, Flame, Footprints, Eye } from 'lucide-react';
 
 // ADJUSTABLE CONSTANT - Change timer duration here
-const TIMER_DURATION = 5; // seconds
+const TIMER_DURATION = 12; // seconds
 
 const NimbleTurnTimer = () => {
   const [phase, setPhase] = useState('select-actions'); // 'select-actions', 'taking-turn', 'summary'
