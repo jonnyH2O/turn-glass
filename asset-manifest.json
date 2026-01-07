@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/turn-glass/static/css/main.e6c13ad2.css",
+    "main.js": "/turn-glass/static/js/main.99c5ca45.js",
+    "static/js/453.0159a1d1.chunk.js": "/turn-glass/static/js/453.0159a1d1.chunk.js",
+    "index.html": "/turn-glass/index.html",
+    "main.e6c13ad2.css.map": "/turn-glass/static/css/main.e6c13ad2.css.map",
+    "main.99c5ca45.js.map": "/turn-glass/static/js/main.99c5ca45.js.map",
+    "453.0159a1d1.chunk.js.map": "/turn-glass/static/js/453.0159a1d1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.99c5ca45.js"
+  ]
+}
