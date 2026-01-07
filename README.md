@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# Turn Glass ⏳
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A medieval fantasy-themed turn timer for the Nimble TTRPG system.
 
-## Available Scripts
 
-In the project directory, you can run:
+## 🎲 Features
 
-### `npm start`
+- **x-second action timer** with animated hourglass (easily adjustable)
+- **4 action types**: Attack, Spell, Move, Assess
+- **3 assessment options**: Ask a Question, Create an Opening, Anticipate Danger
+- **Action tracking**: Visual slots show your selected actions in order
+- **Turn summary**: Review your complete turn 
+- **Timeout handling**: Automatic "Anticipate Danger" if no actions selected
+- **Mobile-friendly**: Fully responsive touch interface
+- **Medieval D&D aesthetic**: Heavy borders, ornate styling, fantasy typography
 
-Runs the app in the development mode.\
+## 🚀 Live Demo
+
+[Play Turn Glass](https://jonnyH2O.github.io/turn-glass)
+
+## 💻 Local Development
+```bash
+# Clone the repository
+git clone https://github.com/jonnyH2O/turn-glass.git
+cd turn-glass
+
+# Install dependencies
+npm install
+
+# Start development server
+npm start
+```
+
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🎨 Customization
 
-### `npm test`
+To change the timer duration, edit the `TIMER_DURATION` constant at the top of `src/App.js`:
+```javascript
+const TIMER_DURATION = 20; // Change to any number of seconds
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🛠️ Built With
 
-### `npm run build`
+- React
+- Lucide React (icons)
+- CSS3 (medieval fantasy styling)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📦 Deployment
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Deploy to GitHub Pages:
+```bash
+npm run deploy
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📄 License
 
-### `npm run eject`
+This project is open source and available under the [MIT License](LICENSE).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🎮 About Nimble TTRPG
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Turn Glass is designed for use with the Nimble tabletop RPG system. Learn more about Nimble at [https://nimblerpg.com/](https://nimblerpg.com/).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
