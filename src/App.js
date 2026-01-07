@@ -151,7 +151,7 @@ const NimbleTurnTimer = () => {
           letter-spacing: 0.15em;
           color: var(--header-text);
           text-align: center;
-          margin-bottom: 40px;
+          margin-bottom: 20px;
           text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
         }
 
@@ -222,12 +222,12 @@ const NimbleTurnTimer = () => {
         .turn-phase {
           display: flex;
           flex-direction: column;
-          gap: 25px;
+          gap: 0px;
         }
 
         .action-slots {
           display: flex;
-          gap: 10px;
+          gap: 15px;
           justify-content: center;
           flex-wrap: wrap;
           margin-bottom: 10px;
@@ -256,19 +256,19 @@ const NimbleTurnTimer = () => {
           display: flex;
           flex-direction: column;
           align-items: center;
-          gap: 15px;
+          gap: 10px;
           padding: 20px 0;
         }
 
         .hourglass {
-          width: 100px;
-          height: 140px;
+          width: 75px;
+          height: 110px;
           position: relative;
         }
 
         .hourglass-svg {
-          width: 100%;
-          height: 100%;
+          width: 75%;
+          height: 75%;
         }
 
         .timer-display {
@@ -559,30 +559,30 @@ const NimbleTurnTimer = () => {
               <svg className="hourglass-svg" viewBox="0 0 100 140">
                 <defs>
                   <clipPath id="topGlass">
-                    <path d="M 20 10 L 80 10 L 50 70 Z" />
+                    <path d="M 20 15 L 80 15 L 50 70 Z" />
                   </clipPath>
                   <clipPath id="bottomGlass">
-                    <path d="M 50 70 L 20 130 L 80 130 Z" />
+                    <path d="M 50 70 L 20 125 L 80 125 Z" />
                   </clipPath>
                 </defs>
-                
+
                 {/* Frame */}
-                <rect x="15" y="5" width="70" height="10" fill="#8b4513" stroke="#d4a574" strokeWidth="2"/>
-                <rect x="15" y="125" width="70" height="10" fill="#8b4513" stroke="#d4a574" strokeWidth="2"/>
-                
+                <rect x="15" y="3" width="70" height="10" fill="#8b4513" stroke="#d4a574" strokeWidth="2"/>
+                <rect x="15" y="127" width="70" height="10" fill="#8b4513" stroke="#d4a574" strokeWidth="2"/>
+
                 {/* Glass outline */}
-                <path d="M 20 15 L 80 15 L 50 70 L 80 125 L 20 125 L 50 70 Z" 
+                <path d="M 20 15 L 80 15 L 50 70 L 80 125 L 20 125 L 50 70 Z"
                       fill="none" stroke="#d4a574" strokeWidth="3"/>
-                
+
                 {/* Top sand (remaining) */}
-                <rect x="20" y={70 - (55 * (timeRemaining / TIMER_DURATION))} 
-                      width="60" height={55 * (timeRemaining / TIMER_DURATION)} 
+                <rect x="20" y={70 - (55 * (timeRemaining / TIMER_DURATION))}
+                      width="60" height={55 * (timeRemaining / TIMER_DURATION)}
                       fill="#d4a574" clipPath="url(#topGlass)"/>
-                
+
                 {/* Bottom sand (fallen) */}
-                <rect x="20" y={125 - (55 * (sandHeight / 100))} width="60" height={55 * (sandHeight / 100)} 
+                <rect x="20" y={125 - (55 * (sandHeight / 100))} width="60" height={55 * (sandHeight / 100)}
                       fill="#d4a574" clipPath="url(#bottomGlass)"/>
-                
+
                 {/* Neck */}
                 <circle cx="50" cy="70" r="2" fill="#d4a574"/>
               </svg>
