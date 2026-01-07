@@ -520,7 +520,7 @@ const NimbleTurnTimer = () => {
         }
       `}</style>
 
-      <h1 className="header">Nimble Turn Timer</h1>
+
 
       <div className="content-box">
         {phase === 'select-actions' && (
@@ -588,6 +588,20 @@ const NimbleTurnTimer = () => {
               </svg>
 
               <div className="timer-display">{timeRemaining}s</div>
+            </div>
+
+            <div style={{
+              fontFamily: 'Cinzel, serif',
+              fontWeight: 700,
+              fontSize: '1.2rem',
+              textTransform: 'uppercase',
+              letterSpacing: '0.1em',
+              color: 'var(--text-dark)',
+              textAlign: 'center',
+              marginTop: '0px',
+              marginBottom: '10px'
+            }}>
+              Choose Your Actions.
             </div>
 
             <div className="action-buttons">
